@@ -43,7 +43,14 @@
   <ItemGroup>
     <Compile Include="ClsDataConnection.cs" />
     <Compile Include="clsOrder.cs" />
+    <Compile Include="ClsOrderCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WidgetBackOffice\OrderBackOffice.csproj">
+      <Project>{a952a77c-3b78-4441-a5cc-012674abfb92}</Project>
+      <Name>OrderBackOffice</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

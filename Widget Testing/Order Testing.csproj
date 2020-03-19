@@ -47,10 +47,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsOrder.cs" />
-    <Compile Include="clsOrdercollection.cs" />
     <Compile Include="tstOrdercollection.cs" />
     <Compile Include="tstOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -32,6 +32,7 @@ public class clsDataConnection
 
     public clsDataConnection(string DBLocation)
     {
+
         GetConString(DBLocation);
     }
 
@@ -224,5 +225,4 @@ public class clsDataConnection
         }
     }
 }
-
 
