@@ -48,7 +48,7 @@
                     <asp:Label ID="Lbloid" runat="server" Text="Order ID"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="Txtoid" runat="server" BorderStyle="Solid" Height="23px"></asp:TextBox>
+                    <asp:TextBox ID="Txtid" runat="server" BorderStyle="Solid" Height="23px"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>

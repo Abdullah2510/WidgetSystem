@@ -48,17 +48,17 @@ public partial class AnOrder : System.Web.UI.Page
         //create an instance of the address book
         ClsOrderCollection OrderBook = new ClsOrderCollection();
         //validate the data on the web form
-        String Error = OrderBook.ThisOrder.Valid(txtboxFname.Text, txtboxlname.Text, Txtoid.Text, Txtboxdate.Text, Txtboxcid.Text, txtboxdid.Text);
+        String Error = OrderBook.ThisOrder.Valid(txtboxFname.Text, txtboxlname.Text, Txtid.Text, Txtboxdate.Text, Txtboxcid.Text, txtboxdid.Text);
         //if the data is OK then add it to the object
         if (Error == "")
         {
             //get the data entered by the user
             OrderBook.ThisOrder.Firstname = txtboxFname.Text;
             OrderBook.ThisOrder.Lastname = txtboxlname.Text;
-            OrderBook.ThisOrder.Orderid = Txtoid.Text;
+            OrderBook.ThisOrder.Orderid = Txtid.Text;
             OrderBook.ThisOrder.DateAdded = Convert.ToDateTime(Txtboxdate.Text);
-            OrderBook.ThisOrder.Customerid = Txtboxcid.Text;
-            OrderBook.ThisOrder.Deliveryid = txtboxdid.Text;
+            OrderBook.ThisOrder.CustomerID = Txtboxcid.Text;
+            OrderBook.ThisOrder.DeliveryID = txtboxdid.Text;
 
             //add the record
             OrderBook.Add();
@@ -79,7 +79,7 @@ public partial class AnOrder : System.Web.UI.Page
             //create an instance of the address book
             Widget_Classes.ClsOrderCollection OrderBook = new Widget_Classes.ClsOrderCollection();
             //validate the data on the web form
-            String Error = OrderBook.ThisOrder.Valid(txtboxFname.Text, txtboxlname.Text, Txtoid.Text, Txtboxdate.Text, Txtboxcid.Text, txtboxdid.Text);
+            String Error = OrderBook.ThisOrder.Valid(txtboxFname.Text, txtboxlname.Text, Txtid.Text, Txtboxdate.Text, Txtboxcid.Text, txtboxdid.Text);
             //if the data is OK then add it to the object
             if (Error == "")
             {
@@ -89,7 +89,7 @@ public partial class AnOrder : System.Web.UI.Page
                 //get the data entered by the user
                 OrderBook.ThisOrder.Firstname = txtboxFname.Text;
                 OrderBook.ThisOrder.Lastname = txtboxlname.Text;
-                OrderBook.ThisOrder.Orderid = Convert.ToInt32(Txtoid.Text);
+                OrderBook.ThisOrder.Orderid = Convert.ToInt32(Txtid.Text);
                 OrderBook.ThisOrder.DateAdded = Convert.ToDateTime(Txtboxdate.Text);
                 OrderBook.ThisOrder.CustomerID = Convert.ToInt32(Txtboxcid.Text);
                 OrderBook.ThisOrder.DeliveryID = Convert.ToInt32(txtboxdid.Text);
@@ -113,7 +113,7 @@ public partial class AnOrder : System.Web.UI.Page
                 //display the data for this record
                 txtboxFname.Text = OrderBook.ThisOrder.Firstname;
                 txtboxlname.Text = OrderBook.ThisOrder.Lastname;
-                Txtoid.Text   =    OrderBook.ThisOrder.Orderid;
+                Txtid.Text   =    OrderBook.ThisOrder.Orderid;
                 Txtboxdate.Text = OrderBook.ThisOrder.DateAdded.ToString();
                 Txtboxcid.Text = OrderBook.ThisOrder.Custromerid();
                 txtboxdid.Text = OrderBook.ThisOrder.Deliveryid;
